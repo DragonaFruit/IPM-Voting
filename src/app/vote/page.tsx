@@ -18,7 +18,7 @@ export default function Vote(){
    return <button key={c.id} disabled={lock} onClick={()=>tog(c.id)} className={`relative bg-white rounded-2xl p-4 flex flex-col items-center text-center border-4 transition ${on?'border-gold bg-yellow-50 shadow-lg':'border-transparent shadow'} ${lock?'opacity-40':''}`}>
     <span className="absolute top-2 left-2 bg-ipm text-white text-sm font-bold rounded-full w-8 h-8 flex items-center justify-center">{c.number}</span>
     {on&&<span className="absolute top-2 right-2 text-ipm text-2xl">✔</span>}<Avatar name={c.name} url={c.photo_url} size={96}/>
-    <b className="mt-2">{c.name}</b><span className="text-xs text-gray-500">PR IPM {c.ranting}</span></button>})}</div>
+    <b className="mt-2">{c.name}</b><span className="text-xs text-gray-500">{c.ranting}</span></button>})}</div>
   <div className="fixed bottom-0 inset-x-0 bg-white border-t p-3 flex justify-center"><button className="btn-y text-lg px-10" disabled={!ok} onClick={()=>{setErr('');setAsk(true)}}>Kirim Suara</button></div>
   {ask&&<div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-20"><div className="bg-white rounded-2xl p-6 w-full max-w-md max-h-[90vh] overflow-auto">
    <h2 className="font-extrabold text-ipm text-xl mb-2">Konfirmasi Pilihan ({sel.length})</h2>
