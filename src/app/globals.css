@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{background:#f7faf3;color:#14210f}
+.btn{@apply rounded-xl px-4 py-2 font-semibold transition disabled:opacity-40}
+.btn-g{@apply btn bg-ipm text-white hover:bg-green-800}.btn-y{@apply btn bg-gold text-ink hover:bg-yellow-400}.btn-o{@apply btn border border-ipm text-ipm hover:bg-green-50}
+.inp{@apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gold}
+.print-only{display:none}
+@media print{body *{visibility:hidden}.print-only,.print-only *{visibility:visible}.print-only{display:block;position:absolute;left:0;top:0;width:100%}.noprint{display:none}}
