@@ -5,3 +5,11 @@ body{background:#f7faf3;color:#14210f}
 .inp{@apply w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gold}
 .print-only{display:none}
 @media print{body *{visibility:hidden}.print-only,.print-only *{visibility:visible}.print-only{display:block;position:absolute;left:0;top:0;width:100%}.noprint{display:none}}
+/* ===== Neomorphic login (palet logo IPM) ===== */
+.neu{background:#fff4dc;box-shadow:9px 9px 20px #e8d3a2,-9px -9px 20px #fffdf6;border:1px solid #fff9ea}
+.neu-in{background:#fff1d3;box-shadow:inset 5px 5px 10px #ecd8aa,inset -5px -5px 10px #fffcf2;border:1px solid #fbe9c0}
+.neu-in:focus-within{box-shadow:inset 5px 5px 10px #ecd8aa,inset -5px -5px 10px #fffcf2,0 0 0 3px #F5863466}
+.neu-btn{background:linear-gradient(135deg,#E91E26,#F58634);box-shadow:0 12px 24px #e91e2644,inset 0 2px 0 #ffffff55;color:#fff}
+.neu-btn:active{transform:translateY(2px);box-shadow:0 6px 12px #e91e2644}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.bubble{animation:bob 3s ease-in-out infinite}
